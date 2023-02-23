@@ -1028,7 +1028,6 @@ abstract class Record(private[chisel3] implicit val compileOptions: CompileOptio
           s"${this.className} does not return the same objects when calling .elements multiple times. Did you make it a def by mistake?"
         )
       }
-
       child.bind(ChildBinding(this), resolvedDirection)
     }
 
